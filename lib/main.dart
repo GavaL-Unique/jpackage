@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const JLoadingExample());
+  runApp(const JLoading());
 }
 
 class JLoading extends StatelessWidget {
