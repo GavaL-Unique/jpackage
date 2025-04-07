@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jloading/route.dart';
 
 void main() {
-  runApp(const JLoading());
+  runApp(const JPackages());
 }
 
 class JPackages extends StatelessWidget {
@@ -22,6 +22,9 @@ class JPackages extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       navigatorKey: navigatorKey,
+      initialRoute: SKRoutes.initialRouter,
+      onUnknownRoute: SKRoutes.unknownRoute,
+      onGenerateRoute: SKRoutes.generateRouter,
     );
   }
 }
